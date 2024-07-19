@@ -75,6 +75,7 @@ upload_file(
     path_in_repo="README.md",
     repo_id="text-to-image",
 )README.md
+
 # Integrating to the Hub.
 We're partnering with cool open source ML libraries to provide free model hosting and versioning. You can find the existing integrations here.
 
@@ -92,3 +93,9 @@ We're partnering with cool open source ML libraries to provide free model hostin
 
 # Contributions (feature requests, bugs, etc.) are super welcome ❤️
 Everyone is welcome to contribute, and we value everybody's contribution. Code is not the only way to help the community. Answering questions, helping others, reaching out and improving the documentations are immensely valuable to the community. We wrote a contribution guide to summarize how to get started to contribute to this repository.
+
+
+  # Developer Information:
+* Name-Surname: Shakthipriya
+* Contact (Email) : shakthipriya3011@gmail.com
+
