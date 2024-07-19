@@ -61,17 +61,10 @@ The Hugging Face Hub uses tokens to authenticate applications (see docs). To log
 
 # Create a repository
 
+Code 
 
+https://github.com/shakthipriy/text-to-image.git
 
-
-# Upload files
-from huggingface_hub import upload_file
-
-upload_file(
-    path_or_fileobj="/home/lysandre/dummy-test/README.md",
-    path_in_repo="README.md",
-    repo_id="lysandre/test-model",
-)
 
 # Integrating to the Hub.
 We're partnering with cool open source ML libraries to provide free model hosting and versioning. You can find the existing integrations here.
