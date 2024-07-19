@@ -49,36 +49,45 @@ image = pipe(prompt).images[0]
 image.save("astronaut_rides_horse.png")
 image
 
-Or an entire repository
+# Or an entire repository
 
 from diffusers import StableDiffusionPipeline
 import torch
-snapshot_download("")
+snapshot_download("runwayml/stable-diffusion-v1-5")
 
 # Login
 
 The Hugging Face Hub uses tokens to authenticate applications (see docs). To login your machine, run the following CLI
 
 # Create a repository
+ after creating repository add the model to the repository
+Code is 
 
-Code 
+ # https://github.com/shakthipriy/text-to-image.git
 
-https://github.com/shakthipriy/text-to-image.git
+Upload files
+Upload a single file
 
+from huggingface_hub import upload_file
 
+upload_file(
+    path_or_fileobj="/text-to-image/README.md",
+    path_in_repo="README.md",
+    repo_id="text-to-image",
+)README.md
 # Integrating to the Hub.
 We're partnering with cool open source ML libraries to provide free model hosting and versioning. You can find the existing integrations here.
 
  # The advantages are:
 
-Free model or dataset hosting for libraries and their users.
-Built-in file versioning, even with very large files, thanks to a git-based approach.
-Serverless inference API for all models publicly available.
-In-browser widgets to play with the uploaded models.
-Anyone can upload a new model for your library, they just need to add the corresponding tag for the model to be discoverable.
-Fast downloads! We use Cloudfront (a CDN) to geo-replicate downloads so they're blazing fast from anywhere on the globe.
-Usage stats and more features to come.
-If you would like to integrate your library, feel free to open an issue to begin the discussion. We wrote a step-by-step guide with ❤️ showing how to do this integration.
+* Free model or dataset hosting for libraries and their users.
+* Built-in file versioning, even with very large files, thanks to a git-based approach.
+* Serverless inference API for all models publicly available.
+* In-browser widgets to play with the uploaded models.
+* Anyone can upload a new model for your library, they just need to add the corresponding tag for the model to be discoverable.
+* Fast downloads! We use Cloudfront (a CDN) to geo-replicate downloads so they're blazing fast from anywhere on the globe.
+* Usage stats and more features to come.
+* If you would like to integrate your library, feel free to open an issue to begin the discussion. We wrote a step-by-step guide with  showing how to do this integration.
 
 
 # Contributions (feature requests, bugs, etc.) are super welcome ❤️
